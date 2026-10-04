@@ -1,0 +1,8 @@
+// Cloudflare Worker settings for cloudform.marcantoniopovolo.com (static site, no Worker code).
+{
+  "name": "cloudform-website",
+  "compatibility_date": "2026-10-03",
+  "assets": { "directory": "./" },
+  // Cloudflare creates the DNS record and HTTPS certificate for this subdomain on deploy.
+  "routes": [{ "pattern": "cloudform.marcantoniopovolo.com", "custom_domain": true }]
+}
