@@ -1,6 +1,6 @@
 # Cloudform website
 
-The website for Cloudform, the game-development and early software company I co-founded and led as CEO from 2021 to 2026. This is the last version of the site I built (version 41), kept as a working case study.
+The website for Cloudform, the game-development and early software company I co-founded and led as CEO from 2021 to 2026. This is the last version of the site I built (version 41).
 
 **Live:** https://cloudform.marcantoniopovolo.com
 
