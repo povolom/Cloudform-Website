@@ -45,4 +45,8 @@ ul.points,ol.points{margin:0;padding-left:22px;color:var(--muted)}
 .foot .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
 .foot a{color:var(--text)}
 @media(max-width:600px){.wrap{width:calc(100% - 32px)}.links{gap:14px}.links .hide-sm{display:none}.hero{padding:48px 0 28px}.intro{font-size:18px}}
-.brand .arrow{width:18px;height:18px;color:var(--accent)}
+/* Cloudform frame page: the bar on top, the Cloudform site filling the rest of the window. */
+body.framed{height:100vh;height:100dvh;display:flex;flex-direction:column;overflow:hidden}
+body.framed .top{position:static;flex:none}
+body.framed main{flex:1;min-height:0}
+body.framed iframe{display:block;width:100%;height:100%;border:0;background:#0b0b12}

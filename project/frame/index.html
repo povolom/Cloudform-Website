@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en" style="--accent:#7ccfff">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Cloudform</title>
+<meta name="description" content="Cloudform, the game-development and early software company Marcantonio Povolo co-founded. Kept online as a case study.">
+<meta name="theme-color" content="#070d18">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,600;9..40,700&family=Space+Grotesk:wght@500;600&display=swap">
+<link rel="stylesheet" href="/project/page.css">
+</head>
+<body class="framed">
+<a class="skip" href="#main">Skip to content</a>
+<header class="top"><div class="wrap row">
+  <a class="brand" href="/" target="_top"><img src="/apple-touch-icon.png" alt="" width="34" height="34"><b>Cloudform</b><span>case study</span></a>
+  <nav class="links" aria-label="Pages"><a href="/project/" target="_top">About<span class="hide-sm">&nbsp;the project</span></a><a href="/" target="_top" aria-current="page">Cloudform site</a><a href="https://marcantoniopovolo.com/projects.html" target="_top" class="hide-sm">Projects</a></nav>
+</div></header>
+<main id="main"><iframe id="site" title="Cloudform website"></iframe></main>
+<script>
+// Show the Cloudform page for this address in the frame, and keep the address bar and tab title
+// in step with whatever page is open inside it (so refreshing or sharing the link still works).
+const frame = document.getElementById('site');
+if (window.top !== window) location.replace('/');            // never show the bar inside itself
+const path = location.pathname.startsWith('/project/') ? '/' : location.pathname;
+frame.src = path + location.search + location.hash;
+frame.addEventListener('load', () => {
+  try {
+    const l = frame.contentWindow.location;
+    history.replaceState(null, '', l.pathname + l.search + l.hash);
+    document.title = frame.contentDocument.title || 'Cloudform';
+  } catch (e) {}
+});
+</script>
+</body>
+</html>

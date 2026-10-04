@@ -1,8 +1,10 @@
-// Cloudflare Worker settings for cloudform.marcantoniopovolo.com (static site, no Worker code).
+// Cloudflare Worker settings for cloudform.marcantoniopovolo.com.
+// worker.js puts my top bar above the site; the site's own files are served unchanged.
 {
   "name": "cloudform-website",
+  "main": "worker.js",
   "compatibility_date": "2026-10-03",
-  "assets": { "directory": "./" },
+  "assets": { "directory": "./", "binding": "ASSETS", "run_worker_first": true },
   // Cloudflare creates the DNS record and HTTPS certificate for this subdomain on deploy.
   "routes": [{ "pattern": "cloudform.marcantoniopovolo.com", "custom_domain": true }]
 }
