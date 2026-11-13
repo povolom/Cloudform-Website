@@ -2,7 +2,7 @@
 
 The website for Cloudform, the game-development and early software company I co-founded and led as CEO from 2021 to 2026. This is the last version of the site I built (version 41).
 
-**Live:** https://cloudform.marcantoniopovolo.com · [About the project](https://marcantoniopovolo.com/projects/cloudform.html)
+**Live:** https://cloudform.marcantoniopovolo.com · [About the project](https://marcantoniopovolo.com/projects/cloudform)
 
 ## What it is
 
@@ -16,7 +16,7 @@ The Cloudform site's own files are kept exactly as they were. Two additions sit 
 
 | Path | What it is |
 |---|---|
-| `project/` | `project/frame/` shows my portfolio's top bar above the Cloudform site. `project/index.html` forwards to the project page on [marcantoniopovolo.com](https://marcantoniopovolo.com/projects/cloudform.html) |
+| `project/` | `project/frame/` shows my portfolio's top bar above the Cloudform site. `project/index.html` forwards to the project page on [marcantoniopovolo.com](https://marcantoniopovolo.com/projects/cloudform) |
 | `worker.js` | A small Cloudflare Worker: when someone opens a page directly, it sends the top bar with the page in a frame below; the frame then loads the original page |
 | `wrangler.jsonc`, `.assetsignore` | Cloudflare settings, and files that shouldn't be served |
 
